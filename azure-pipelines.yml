@@ -11,7 +11,7 @@ steps:
   name: publickey
   inputs:
     secureFile: 'azure_rsa.pub'
-
+- bash: ls -ltr $(System.DefaultWorkingDirectory)
 - task: TerraformCLI@0
   inputs:
     command: 'init'
